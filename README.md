@@ -80,7 +80,7 @@ Dataset ini mencakup variabel seperti:
 
 Dashboard interaktif untuk mengeksplorasi World Happiness Report 2015–2019.
 
-🚀 Coba aplikasinya: [Klik di sini](https://dian-puspita-happiness-viz.streamlit.app)
+🚀 Coba aplikasinya: [Klik di sini](https://world-happiness-dashboard-dian.streamlit.app/).
 
 ### 📊 Fitur Visualisasi:
 - Negara paling bahagia tiap tahun
