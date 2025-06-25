@@ -76,13 +76,19 @@ Dataset ini mencakup variabel seperti:
 
 ---
 
-## 🌐 Demo Online (Opsional)
+## 🌍 World Happiness Dashboard
 
-Jika kamu deploy di [Streamlit Community Cloud](https://streamlit.io/cloud), kamu bisa tambahkan link-nya di sini:
+Dashboard interaktif untuk mengeksplorasi World Happiness Report 2015–2019.
 
-[🔗 Lihat Dashboard Online](https://nama-streamlit.streamlit.app)
+🚀 Coba aplikasinya: [Klik di sini](https://dian-puspita-happiness-viz.streamlit.app)
 
----
+### 📊 Fitur Visualisasi:
+- Negara paling bahagia tiap tahun
+- Rata-rata skor global
+- Distribusi skor
+- Komposisi faktor skor
+- Tren skor per negara
+- Proporsi skor tiap negara
 
 ## 📄 Lisensi
 
