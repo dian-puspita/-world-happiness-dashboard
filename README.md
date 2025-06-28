@@ -9,22 +9,22 @@ Proyek ini menyajikan berbagai visualisasi data untuk membantu pengguna memahami
 
 ## Fitur Visualisasi
 
-1. ** Negara Paling Bahagia Tiap Tahun**  
+1. **Negara Paling Bahagia Tiap Tahun**  
    Top 5 negara paling bahagia berdasarkan skor tahunan.
 
-2. ** Rata-Rata Skor Kebahagiaan Dunia**  
+2. **Rata-Rata Skor Kebahagiaan Dunia**  
    Tren rata-rata skor kebahagiaan dunia dari tahun ke tahun.
 
-3. ** Distribusi Skor Dunia**  
+3. **Distribusi Skor Dunia**  
    Histogram persebaran skor kebahagiaan semua negara di suatu tahun.
 
-4. ** Komposisi Faktor Penyumbang Skor**  
+4. **Komposisi Faktor Penyumbang Skor**  
    Proporsi rata-rata kontribusi faktor penyusun skor kebahagiaan secara global.
 
-5. ** Tren Skor Negara Tertentu**  
+5. **Tren Skor Negara Tertentu**  
    Perjalanan skor kebahagiaan sebuah negara dari tahun ke tahun.
 
-6. ** Proporsi Skor Tiap Negara**  
+6. **Proporsi Skor Tiap Negara**  
    Pie chart kontribusi tiap faktor (ekonomi, kesehatan, kebebasan, dll) terhadap skor negara tertentu di tahun tertentu.
 
 ---
