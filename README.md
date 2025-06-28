@@ -83,7 +83,7 @@ Dataset ini mencakup variabel seperti:
 
 Jika kamu deploy di [Streamlit Community Cloud](https://streamlit.io/cloud), kamu bisa tambahkan link-nya di sini:
 
-[🔗 Lihat Dashboard Online](https://nama-streamlit.streamlit.app)
+[🔗 Lihat Dashboard Online](https://world-happiness-dashboard-dian.streamlit.app/)
 
 ---
 
