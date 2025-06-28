@@ -79,7 +79,7 @@ Dataset ini mencakup variabel seperti:
 
 ---
 
-## 🌐 Demo Online (Opsional)
+## Demo Online
 
 Jika kamu deploy di [Streamlit Community Cloud](https://streamlit.io/cloud), kamu bisa tambahkan link-nya di sini:
 
