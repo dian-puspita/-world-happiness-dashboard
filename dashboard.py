@@ -72,6 +72,8 @@ if menu == "Negara Paling Bahagia Tiap Tahun":
     ax.set_title("Top 5 Negara Paling Bahagia (Lollipop Chart)")
     ax.grid(True, axis='x', linestyle='--', alpha=0.5)
     st.pyplot(fig)
+    
+    st.caption(f"**Insight**: Pada tahun {year_selected}, negara dengan skor kebahagiaan tertinggi menunjukkan kontribusi stabil dari berbagai faktor seperti GDP, dukungan sosial, dan harapan hidup. Negara-negara Nordik sering kali mendominasi peringkat ini.")
 
 # Visualisasi 2 (tidak pakai filter tahun)
 elif menu == "Rata-Rata Skor per Tahun":
@@ -98,6 +100,8 @@ elif menu == "Rata-Rata Skor per Tahun":
 
     st.altair_chart(chart, use_container_width=True)
 
+    st.caption("**Insight**: Rata-rata skor kebahagiaan dunia cenderung stabil antara 2015 hingga 2019, dengan sedikit peningkatan pada tahun 2018. Hal ini menunjukkan bahwa kebahagiaan global tidak berubah drastis dalam jangka pendek.")
+
 # Visualisasi 3
 elif menu == "Distribusi Skor Kebahagiaan Dunia":
     st.header("🌐 Distribusi Skor Kebahagiaan Dunia per Tahun")
@@ -112,7 +116,8 @@ elif menu == "Distribusi Skor Kebahagiaan Dunia":
     ax.set_ylabel("Skor Kebahagiaan")
     st.pyplot(fig)
 
-# Visualisasi 4
+    st.caption(f"**Insight**: Pada tahun {year_selected}, sebagian besar negara memiliki skor kebahagiaan dalam rentang menengah, terlihat dari kepadatan di bagian tengah violin plot. Negara dengan skor ekstrem lebih sedikit dan berada di ujung distribusi.")
+
 # Visualisasi 4
 elif menu == "Komposisi Faktor Penyumbang Skor":
     st.header("🧩 Komposisi Faktor Penyumbang Skor")
@@ -128,7 +133,7 @@ elif menu == "Komposisi Faktor Penyumbang Skor":
     colors = sns.color_palette('pastel')
 
     def small_autopct(pct):
-        return f'{pct:.1f}%' if pct > 3 else ''
+        return f'{pct:.1f}%'
 
     wedges, texts, autotexts = ax.pie(
         avg_factors,
@@ -152,8 +157,10 @@ elif menu == "Komposisi Faktor Penyumbang Skor":
         title_fontsize='small'
     )
 
-    fig.subplots_adjust(top=0.85)  # Jarak atas (judul) lebih dekat ke chart
+    fig.subplots_adjust(top=0.85)  # Jarak judul lebih dekat ke chart
     st.pyplot(fig)
+    
+    st.caption(f"**Insight**: Pada tahun {year_selected}, faktor dengan proporsi terbesar dalam skor kebahagiaan rata-rata dunia adalah *GDP per capita*, *dukungan sosial*, dan *harapan hidup sehat*. Faktor seperti *kemurahan hati* dan *persepsi terhadap korupsi* berkontribusi lebih kecil dalam komposisi keseluruhan.")
 
 # Visualisasi 5
 elif menu == "Tren Skor Negara Tertentu":
@@ -165,6 +172,9 @@ elif menu == "Tren Skor Negara Tertentu":
         tooltip=["Year", "Happiness Score"]
     ).properties(width=600, height=400).interactive()
     st.altair_chart(chart)
+
+    st.caption(f"**Insight**: Skor kebahagiaan untuk {country_selected} mengalami fluktuasi dari tahun ke tahun. Perubahan ini bisa mencerminkan kondisi sosial, ekonomi, atau politik yang mempengaruhi kesejahteraan masyarakat.")
+
 
 # Visualisasi 6
 elif menu == "Proporsi Skor Tiap Negara":
@@ -207,6 +217,8 @@ elif menu == "Proporsi Skor Tiap Negara":
         st.pyplot(fig)
     else:
         st.warning("Data tidak tersedia untuk kombinasi negara dan tahun ini.")
+
+        st.caption(f"**Insight**: Komposisi faktor di {country_selected} pada tahun {year_selected} memperlihatkan kontribusi dominan dari beberapa aspek seperti GDP dan social support. Namun, negara ini juga mungkin memiliki tantangan pada faktor-faktor lain seperti persepsi korupsi atau kemurahan hati.")
 
 # Footer
 st.markdown("""
